@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 
 //Nata
-//Nata2
+
 //Nata3
 //Nata4
 class AnagramTest {
