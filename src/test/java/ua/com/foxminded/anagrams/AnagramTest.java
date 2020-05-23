@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 
 //Nata
+//Nata2
 class AnagramTest {
 
     Anagram anagram = new Anagram(); 
@@ -169,7 +170,7 @@ class AnagramTest {
     @Test
     void testTextReverseOnlyLetters_shouldReturnOnlySpecialCharacters_whenInputOnlySpecialCharacters() {
 
-        final String input = "!@*/&%$§";
+        final String input = "!@*/&%$";
         final String actual = anagram.textReverseOnlyLetters(input);
 
         assertEquals(input, actual);
@@ -178,9 +179,9 @@ class AnagramTest {
     @Test
     void testTextReverseOnlyLetters_shouldReturnSpecialCharacterUndLettersOneWord_whenInputSpecialCharacterUndLettersOneWord() {
 
-        final String input = "H§al%lo";
+        final String input = "Hal%lo";
         final String actual = anagram.textReverseOnlyLetters(input);
-        final String expected = "o§ll%aH";
+        final String expected = "oll%aH";
 
         assertEquals(expected, actual);
     }
@@ -188,7 +189,7 @@ class AnagramTest {
     @Test
     void testTextReverseOnlyLetters_shouldReturnSpecialCharacterUndNumbersOneWord_whenInputSpecialCharacterUndNumbersOneWord() {
 
-        final String input = "1!2§3$5%";
+        final String input = "1!23$5%";
         final String actual = anagram.textReverseOnlyLetters(input);
 
         assertEquals(input, actual);
